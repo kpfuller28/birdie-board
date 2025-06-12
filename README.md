@@ -1,6 +1,6 @@
 # Birdie Board
 
-A simple Django-powered golf scorecard app.
+A simple Django-powered golf scorecard app. This project uses a `Makefile` to simplify common development tasks, and assumes a feature branch Git workflow for collaboration.
 
 ## Setup Instructions
 
