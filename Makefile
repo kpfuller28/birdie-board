@@ -1,13 +1,13 @@
 
 
 migrate:
-	python3 manage.py migrate
+	. venv/bin/activate && python3 manage.py migrate
 
 makemigrations:
-	python3 manage.py makemigrations
+	. venv/bin/activate && python3 manage.py makemigrations
 
 shell:
-	python3 manage.py shell
+	. venv/bin/activate && python3 manage.py shell
 
 # Create a virtual environment in the folder 'venv'
 venv:
