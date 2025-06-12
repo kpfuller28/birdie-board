@@ -11,7 +11,7 @@ shell:
 
 # Create a virtual environment in the folder 'venv'
 venv:
-	python3 -m venv venv
+	if [ ! -d "venv" ]; then python3 -m venv venv; fi
 
 # Install requirements into the virtual environment
 install:
