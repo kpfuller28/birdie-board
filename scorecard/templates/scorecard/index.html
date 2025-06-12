@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Golf Buddy</title>
+</head>
+<body>
+  <h1>Welcome {{user.username}}!</h1><br>
+  <h3>Below are your recorded rounds.</h3><br>
+  {% if round_list %}
+  <ul>
+    {% for round in round_list %}
+    <li>
+      <p>Round {{round.id}}</p>
+      <ul>
+        <li>
+          <p>Holes: {{round.holes}}</p>
+          <p>Par: {{round.full_par}}</p>
+          <p>Score: {{round.score}}</p>
+        </li>
+      </ul>
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p>No rounds recorded yet.</p>
+  {% endif %}
+</body>
+</html>
