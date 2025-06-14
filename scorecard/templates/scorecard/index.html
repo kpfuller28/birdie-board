@@ -11,7 +11,7 @@
   <ul>
     {% for round in round_list %}
     <li>
-      <p>Round {{round.id}}</p>
+      <a href = "{% url 'scorecard:round' round.id %}"> Round {{round.id}}</a>
       <ul>
         <li>
           <p>Holes: {{round.holes}}</p>

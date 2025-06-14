@@ -18,3 +18,8 @@ class IndexView(generic.ListView):
         context = super().get_context_data(**kwargs)
         context['user'] = self.request.user
         return context
+
+class RoundView(generic.DetailView):
+    model = Round
+    template_name = 'scorecard/round_details.html'
+    context_object_name = 'round'
